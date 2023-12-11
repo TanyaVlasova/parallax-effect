@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/TanyaVlasova/parallax-effect.git/static/css/main.ad427f03.css",
+    "main.js": "/TanyaVlasova/parallax-effect.git/static/js/main.b5124651.js",
+    "static/media/sky.png": "/TanyaVlasova/parallax-effect.git/static/media/sky.00f125e19a371eb5a249.png",
+    "static/media/frame.png": "/TanyaVlasova/parallax-effect.git/static/media/frame.54e210a830a610f8497c.png",
+    "static/media/woman.png": "/TanyaVlasova/parallax-effect.git/static/media/woman.9c5013413dc20ab9ec40.png",
+    "static/media/face2.png": "/TanyaVlasova/parallax-effect.git/static/media/face2.34c3f4986b4f96b1557e.png",
+    "static/media/foot.png": "/TanyaVlasova/parallax-effect.git/static/media/foot.cd5c291e75052dff9fa3.png",
+    "static/media/arm.png": "/TanyaVlasova/parallax-effect.git/static/media/arm.3dd254a0377107c48377.png",
+    "static/media/face1.png": "/TanyaVlasova/parallax-effect.git/static/media/face1.db741cd21f79346303c3.png",
+    "index.html": "/TanyaVlasova/parallax-effect.git/index.html",
+    "main.ad427f03.css.map": "/TanyaVlasova/parallax-effect.git/static/css/main.ad427f03.css.map",
+    "main.b5124651.js.map": "/TanyaVlasova/parallax-effect.git/static/js/main.b5124651.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad427f03.css",
+    "static/js/main.b5124651.js"
+  ]
+}
