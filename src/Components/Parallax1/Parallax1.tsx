@@ -16,7 +16,7 @@ const Parallax1: FC = () => {
   const elems = useRef<HTMLDivElement[]>([]);
 
   const handleMouseMove = useCallback((event: MouseEvent<HTMLDivElement>) => {
-    const coordsPercent = {
+    const mouseCoordsPercent = {
       x: Math.round((event.clientX / screenSizes.current.width) * 100),
       y: Math.round((event.clientY / screenSizes.current.height) * 100),
     };
@@ -26,12 +26,14 @@ const Parallax1: FC = () => {
     elems.current.forEach((elem, index) => {
       // Фон с 0 индексом
       if (index === 0) {
-        degs.x = (bgDegsRange.x / 100) * coordsPercent.y - bgDegsRange.x / 2;
-        degs.y = (bgDegsRange.y / 100) * coordsPercent.x - bgDegsRange.y / 2;
+        degs.x =
+          (bgDegsRange.x / 100) * mouseCoordsPercent.y - bgDegsRange.x / 2;
+        degs.y =
+          (bgDegsRange.y / 100) * mouseCoordsPercent.x - bgDegsRange.y / 2;
         elem.style.transform = `rotateY(${degs.y}deg) rotateX(${degs.x}deg) translateZ(-250px) scale(1.2)`;
       } else {
-        degs.x = (degsRange.x / 100) * coordsPercent.y - degsRange.x / 2;
-        degs.y = (degsRange.y / 100) * coordsPercent.x - degsRange.y / 2;
+        degs.x = (degsRange.x / 100) * mouseCoordsPercent.y - degsRange.x / 2;
+        degs.y = (degsRange.y / 100) * mouseCoordsPercent.x - degsRange.y / 2;
         elem.style.transform = `rotateY(${-degs.y}deg) rotateX(${degs.x}deg)`;
       }
     });
